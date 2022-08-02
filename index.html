@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META NAME="Keywords" Content="how much is a shiba, 1 shiba, 1shib, bir shiba ne kadar, shiba calculator, shiba hesaplayıcı,">
+    <link rel="icon" href="img/logo.png">
+    <title>shiba calculator</title>
+        <script>
+        function insert(num) {
+            document.form.text.value = document.form.text.value + num;
+        }
+        function equal() {
+            var exp = document.form.text.value;
+            if (exp){
+                document.form.text.value=eval(exp);
+            }
+        }
+        function c() {
+            document.form.text.value="";
+        }
+        function back() {
+            var exp = document.form.text.value;
+            document.form.text.value = exp.substring(0,exp.length-1);
+        }
+    </script>
+      <style>
+    .footer{
+        position: fixed;
+        left: 0px;
+        bottom: 0; 
+        width: 100%;
+        background-color: #000000;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    .text{
+            border: 0px;
+            padding: 10px;
+            width: 55%;
+            margin: auto;
+            color: #0e57e0;
+            font-family: Arial;
+        }
+</style>
+</head>
+<body bgcolor="#e5f9f6">
+    <div align="center">
+            <a href="index.html"><img src="img/logo.png" width="70" height="90" ></a>
+        </div>
+        <div class="text">
+        Once upon a time, there was a very special dog.
+        That dog was a Shiba Inu, and this dog inspired millions of
+        people around the world to invest money into tokens with the dog's image on it.
+    </div>
+<div align="center">
+    <h3> <font color="#009a9d" face="carousel">The Value of My Shiba</font></h3>
+    
+    <label><font color="#009a9d" face="carousel">total shiba: </font></label>
+    <input type="number" id="sayi1">
+
+    <select id="islem">
+        <option value="carp1">£</option>
+        <option value="carp2">€</option>
+        <option value="carp3">$</option>
+        <option value="carp4">₺</option>
+    </select>
+
+    
+
+    <button id="buton">calculate</button>
+
+    <div id="sonuc"></div>
+    
+    <script>
+        var sonuc;
+        function hesapla(){
+            var sayi1=document.getElementById("sayi1").value;
+            var islem=document.getElementById("islem").value;
+    
+            var s1 = Number(sayi1);
+
+            if(islem == 'carp1')
+                sonuc = s1 * 0.000017;
+            else if(islem == 'carp2')
+                sonuc = s1 * 0.000014;
+            else if(islem == 'carp3')
+                sonuc = s1 * 0.000011;
+            else 
+                sonuc = s1 * 0.000197;
+
+            document.getElementById("sonuc").innerHTML = "my existence:" + sonuc;
+        }
+
+        var hesaplaBtn=document.getElementById("buton");
+        hesaplaBtn.onclick=hesapla;
+
+    </script>
+        <div class="footer">
+        <p>©2022 1shib, all rights reserved |  
+<a href="https://t.me/mbayso" target="_blank" style="text-decoration: none" >contact us</a></p>
+    </div>
+</body>
+</html>
