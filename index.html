@@ -37,31 +37,7 @@
     <button id="buton">calculate</button>
 
     <div id="sonuc"></div>
-    
-    <script>
-        var sonuc;
-        function hesapla(){
-            var sayi1=document.getElementById("sayi1").value;
-            var islem=document.getElementById("islem").value;
-    
-            var s1 = Number(sayi1);
-
-            if(islem == 'carp1')
-                sonuc = s1 * 0.000017;
-            else if(islem == 'carp2')
-                sonuc = s1 * 0.000014;
-            else if(islem == 'carp3')
-                sonuc = s1 * 0.000011;
-            else 
-                sonuc = s1 * 0.000197;
-
-            document.getElementById("sonuc").innerHTML = "my existence:" + sonuc;
-        }
-
-        var hesaplaBtn=document.getElementById("buton");
-        hesaplaBtn.onclick=hesapla;
-
-    </script>
+    <script src="script.js"></script>
         <div class="footer">
         <p>©2022 1shib, all rights reserved |  
 <a href="https://t.me/mbayso" target="_blank" style="text-decoration: none" >contact us</a></p>
