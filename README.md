@@ -15,4 +15,4 @@ I made a website that shows the real money value of the Shiba inu you want to bu
 - interactive with the user (dynamic website)
 
 ##### visit the [website]
-[website]: <"https://www.1shib.com">
+[website]: <https://www.1shib.com>
